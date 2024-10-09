@@ -1,0 +1,104 @@
+﻿@model TY.test1.Models.ViewModels.User
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>User</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="AcpdSid" class="control-label"></label>
+                <input asp-for="AcpdSid" class="form-control" />
+                <span asp-validation-for="AcpdSid" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AcpdCname" class="control-label"></label>
+                <input asp-for="AcpdCname" class="form-control" />
+                <span asp-validation-for="AcpdCname" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AcpdEname" class="control-label"></label>
+                <input asp-for="AcpdEname" class="form-control" />
+                <span asp-validation-for="AcpdEname" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AcpdSname" class="control-label"></label>
+                <input asp-for="AcpdSname" class="form-control" />
+                <span asp-validation-for="AcpdSname" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AcpdEmail" class="control-label"></label>
+                <input asp-for="AcpdEmail" class="form-control" />
+                <span asp-validation-for="AcpdEmail" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AcpdStatus" class="control-label"></label>
+                <input asp-for="AcpdStatus" class="form-control" />
+                <span asp-validation-for="AcpdStatus" class="text-danger"></span>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="AcpdStop" /> @Html.DisplayNameFor(model => model.AcpdStop)
+                </label>
+            </div>
+            <div class="form-group">
+                <label asp-for="AcpdStopMemo" class="control-label"></label>
+                <input asp-for="AcpdStopMemo" class="form-control" />
+                <span asp-validation-for="AcpdStopMemo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AcpdLoginId" class="control-label"></label>
+                <input asp-for="AcpdLoginId" class="form-control" />
+                <span asp-validation-for="AcpdLoginId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AcpdLoginPw" class="control-label"></label>
+                <input asp-for="AcpdLoginPw" class="form-control" />
+                <span asp-validation-for="AcpdLoginPw" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AcpdMemo" class="control-label"></label>
+                <input asp-for="AcpdMemo" class="form-control" />
+                <span asp-validation-for="AcpdMemo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AcpdNowdatetime" class="control-label"></label>
+                <input asp-for="AcpdNowdatetime" class="form-control" />
+                <span asp-validation-for="AcpdNowdatetime" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AppdNowid" class="control-label"></label>
+                <input asp-for="AppdNowid" class="form-control" />
+                <span asp-validation-for="AppdNowid" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AcpdUpddatetitme" class="control-label"></label>
+                <input asp-for="AcpdUpddatetitme" class="form-control" />
+                <span asp-validation-for="AcpdUpddatetitme" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AcpdUpdid" class="control-label"></label>
+                <input asp-for="AcpdUpdid" class="form-control" />
+                <span asp-validation-for="AcpdUpdid" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

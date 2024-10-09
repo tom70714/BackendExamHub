@@ -1,0 +1,108 @@
+﻿@model TY.test1.Models.ViewModels.User
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>User</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.AcpdSid)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.AcpdSid)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.AcpdCname)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.AcpdCname)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.AcpdEname)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.AcpdEname)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.AcpdSname)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.AcpdSname)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.AcpdEmail)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.AcpdEmail)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.AcpdStatus)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.AcpdStatus)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.AcpdStop)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.AcpdStop)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.AcpdStopMemo)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.AcpdStopMemo)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.AcpdLoginId)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.AcpdLoginId)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.AcpdLoginPw)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.AcpdLoginPw)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.AcpdMemo)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.AcpdMemo)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.AcpdNowdatetime)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.AcpdNowdatetime)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.AppdNowid)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.AppdNowid)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.AcpdUpddatetitme)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.AcpdUpddatetitme)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.AcpdUpdid)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.AcpdUpdid)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

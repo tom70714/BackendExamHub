@@ -1,6 +1,0 @@
-@TY.test_HostAddress = http://localhost:5133
-
-GET {{TY.test_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###
