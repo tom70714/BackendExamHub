@@ -56,7 +56,7 @@ GO
 			DeLog_StoredPrograms,
 			DeLog_GroupID,
 			DeLog_ExecutionProgram,
-			DeLog_ExecutionInfo
+			DeLog_ExecuteionInfo
 		)
 		Values
 		(
@@ -70,17 +70,17 @@ GO
 		(
 				SELECT
 						Top 100 
-						DeLog_AutoID											AS 'AutoID',
+						DeLog_AuthID											AS 'AutoID',
 						DeLog_ExecutionProgram					AS 'NAME',
-						DeLog_ExecutionInfo							AS 'Action',
-						DeLog_ExDateTime								AS 'DateTime'
+						DeLog_ExecuteionInfo							AS 'Action',
+						exelog_nowdatetime								AS 'DateTime'
 				FROM
 						MyOffice_ExcuteionLog						WITH(NOLOCK)
 				WHERE
 					DeLog_GroupID = @_InBox_GroupID
 		
 				ORDER BY
-					DeLog_AutoID FOR json PATH,
+					DeLog_AuthID FOR json PATH,
 					ROOT('ProgramLog'),
 					INCLUDE_NULL_VALUES
 		) 
